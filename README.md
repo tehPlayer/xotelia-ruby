@@ -1,8 +1,4 @@
-# Xotelia::Ruby
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/xotelia/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+# Xotelia API Wrapper
 
 ## Installation
 
@@ -22,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    xotelia = Xotelia::Client.new(API_TOKEN) # or set ENV['XOTELIA_API_TOKEN']
+
+    xotelia.list_bookings(Time.now, Time.now + 3600)
+    xotelia.create_booking('booking', params) # 'booking' - ota; params - as stated in API docs
+    xotelia.update_booking('booking', params)
+    xotelia.destroy_booking('booking', params)
 
 ## Development
 
@@ -32,7 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/xotelia-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tehPlayer/xotelia-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
