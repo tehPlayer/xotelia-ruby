@@ -40,3 +40,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/tehPla
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+*Feel free to contact me if you need help: adamczyk.marcin [--a-t--] outlook.com*
